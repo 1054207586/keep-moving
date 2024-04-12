@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: project-util-producer-server
+  cloud:
+    config:
+      enabled: false
+      discovery:
+        enabled: false
+        service-id: ycloud-config
+server:
+  port: 20321
+  
+ycloud:
+  eureka:
+    username: yyc
+      
+eureka:
+  client:
+    serviceUrl:
+     # defaultZone: http://${ycloud.eureka.username}:@ycloud-eureka:18002/eureka/
+      defaultZone: http://${ycloud.eureka.username}:@ycloud-eureka:18002/eureka/
+  instance:
+    prefer-ip-address: true  #采用ip注册,指定hostname便无效
