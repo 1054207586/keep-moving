@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.dpi.keep-moving</groupId>
+    <artifactId>keep-moving-producer</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+  <artifactId>keep-moving-producer-core</artifactId>
+  <name>keep-moving-producer-core</name>
+  <url>http://maven.apache.org</url>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <dependencies>
+  		<dependency>
+			<groupId>com.yyc.ycloud</groupId>
+			<artifactId>yyc-commons</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.dpi.keep-moving</groupId>
+			<artifactId>keep-moving-producer-api</artifactId>
+			<version>${activity.version}</version>
+		</dependency>
+
+		<!-- redis -->
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+
+		<!-- reids -->
+
+		<!-- 数据连接 -->
+		<!-- druid -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid-spring-boot-starter</artifactId>
+		</dependency>
+		<!-- druid -->
+
+
+
+		<!-- mybatis -->
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>tk.mybatis</groupId>
+			<artifactId>mapper-spring-boot-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.github.pagehelper</groupId>
+			<artifactId>pagehelper-spring-boot-starter</artifactId>
+		</dependency>
+		<!-- mybatis -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+
+		<!-- mysql -->
+
+
+		<!-- oracle -->
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc6</artifactId>
+		</dependency>
+		<!-- oracle -->
+
+		<!-- 数据连接 -->
+		<!-- session -->
+		<dependency>
+			<groupId>org.springframework.session</groupId>
+			<artifactId>spring-session</artifactId>
+		</dependency>
+		<!-- session -->
+
+		<!-- swagger -->
+		<dependency>
+			<groupId>com.yyc.ycloud</groupId>
+			<artifactId>ycloud-starter-swagger2</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+		</dependency>
+		<!-- swagger -->
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-zipkin</artifactId>
+		</dependency>
+
+
+		<!-- 平台依赖 -->
+		<dependency>
+			<groupId>com.yyc.ycloud</groupId>
+			<artifactId>ycloud-starter-base</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.yyc.ycloud</groupId>
+			<artifactId>ycloud-starter-mybatis</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.yyc.ycloud</groupId>
+			<artifactId>ycloud-starter-druid</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.yyc.ycloud</groupId>
+			<artifactId>ycloud-starter-mysql</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.yyc.ycloud</groupId>
+			<artifactId>ycloud-starter-serviceproxy</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.yyc.ycloud</groupId>
+			<artifactId>ycloud-starter-crypto</artifactId>
+		</dependency>
+		<!-- 平台依赖 -->
+	  <dependency>
+		  <groupId>com.yyc.ycloud</groupId>
+		  <artifactId>ycloud-starter-audit</artifactId>
+	  </dependency>
+		<!-- test -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!-- test -->
+	</dependencies>
+</project>
